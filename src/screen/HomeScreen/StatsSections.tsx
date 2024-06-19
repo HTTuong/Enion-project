@@ -49,7 +49,7 @@ export default function StatsSection(props: IStatsSectionProps) {
     // console.log(priceList)
     return (
         <div className='w-full mt-6'>
-            <div className='grid grid-cols-2 gap-6 text-black'>
+            <div className='grid grid-cols-2  gap-4 md:gap-6 text-black'>
                 <CardItem
                     title='Consumptions'
                     value={ctx.consumption ? ctx.consumption : consumptionData[12]}

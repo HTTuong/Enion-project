@@ -22,13 +22,13 @@ const CardItem: FC<ICardItemProps> = (props) => {
 
     return (
         <div className={classNames(`col-span-1 flex flex-col h-fit ${color} rounded-3xl p-4`)}>
-            <div className='flex items-center text-6xl font-normal text-black'>
-                <h3 className='font-normal'>{value}</h3>
-                <p>{unit}</p>
+            <div className='flex justify-center md:justify-start flex-col sm:flex-row  items-center font-normal text-black'>
+                <h3 className='text-5xl md:text-7xl font-normal'>{value}</h3>
+                <p className='text-3xl md:text-6xl'>{unit}</p>
             </div>
-            <p className='text-lg text-black'>{title}</p>
+            <p className='text-lg text-black text-center mt-3 sm:mt-0'>{title}</p>
             <div
-                className='w-full flex justify-end mt-4 text-2xl cursor-pointer'
+                className='w-full flex justify-center md:justify-end mt-4 text-2xl cursor-pointer'
                 onClick={handleNavigateToDetail}
             >
                 <FaArrowRight />

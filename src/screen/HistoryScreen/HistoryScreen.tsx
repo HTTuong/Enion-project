@@ -48,16 +48,16 @@ export default function HistoryScreen() {
     }, [])
 
     return (
-        <div className='w-full flex flex-col p-8'>
+        <div className='w-full flex flex-col p-6 pt-10 sm:p-8 sm:pt-8'>
             <Heading title='History' userName='Enion' />
 
-            <div className='grid grid-cols-3 gap-6 mt-10'>
-                <div className='col-span-2 bg-black/20 h-fit rounded-2xl p-8'>
+            <div className='w-full lg:grid  grid-cols-3 gap-6 mt-10'>
+                <div className='col-span-2 bg-black/20 h-fit rounded-2xl p-0 sm:p-8'>
                     {/* Market price */}
-                    <div className='flex flex-col w-full'>
+                    <div className='flex flex-col w-full mt-8 sm:mt-0'>
                         {/* Heading */}
                         <div className='flex w-full justify-between items-center mb-8'>
-                            <h3 className='text-3xl text-white font-normal select-none'>
+                            <h3 className=' text-lg sm:text-3xl text-white font-normal select-none'>
                                 MARKET PRICES
                             </h3>
                         </div>
@@ -68,10 +68,9 @@ export default function HistoryScreen() {
                             unitType='c/kWh'
                             timeData={marketPriceTimeData}
                         />
-                        {/* <CustomLineChart /> */}
                     </div>
                 </div>
-                <div className='col-span-1 bg-white h-fit rounded-2xl shadow-lg p-8'>
+                <div className='col-span-1 bg-white h-fit rounded-2xl shadow-lg p-8 hidden lg:block'>
                     <p className=' text-default'>This page shows market price chart in 2022</p>
                 </div>
             </div>
