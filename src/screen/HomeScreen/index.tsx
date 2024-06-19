@@ -70,7 +70,7 @@ const HomeScreen = () => {
             <Heading title='Home' userName='Enion' />
 
             <div className='w-full lg:grid grid-cols-3 gap-6 mt-10'>
-                <div className='col-span-2 bg-black/20 h-fit rounded-2xl shadow-lg p-0 sm:p-8'>
+                <div className='col-span-2 bg-transparent md:bg-black/20 h-fit rounded-2xl shadow-lg p-0 sm:p-8'>
                     {/* Heading: Status */}
                     <div className='flex w-full items-center justify-between mt-8 sm:mt-0'>
                         <div className='flex w-full justify-between items-center'>

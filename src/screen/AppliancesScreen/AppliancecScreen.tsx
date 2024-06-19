@@ -9,7 +9,7 @@ export default function AppliancesScreen() {
             <Heading title='Appliances' userName='Enion' />
 
             <div className='w-full lg:grid grid-cols-3 gap-6 mt-10'>
-                <div className='col-span-2 bg-black/20 h-fit rounded-2xl p-0 sm:p-8'>
+                <div className='col-span-2 bg-transparent md:bg-black/20 h-fit rounded-2xl p-0 sm:p-8'>
                     <div className='flex flex-col w-full mt-8 sm:mt-0'>
                         {/* Heading */}
                         <div className='flex w-full justify-between items-center'>
